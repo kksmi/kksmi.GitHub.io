@@ -1,9 +1,6 @@
 # welcome to kksmi's page
 ##  Information                    
 
-                                                                                        ![Image](rV5qv_ETZvY.jpg)
-
-
 #### name:xxxx
 #### school:njust
 #### email:linjiahong@njust.edu.cn
@@ -16,3 +13,4 @@
 
 ## projects
 
+![Image](rV5qv_ETZvY.jpg)
