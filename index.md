@@ -11,4 +11,4 @@
 ## Research Direction
 
 ## projects
--* [img src="/rV5qv_ETZvY.jpg" width="100%"> ]
+![Image]()
