@@ -11,4 +11,4 @@
 ## Research Direction
 
 ## projects
-![Image](src/rV5qv_ETZvY.jpg)
+![Image](rV5qv_ETZvY.jpg)
