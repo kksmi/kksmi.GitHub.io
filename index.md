@@ -1,13 +1,14 @@
-## welcome to kksmi's page
-###  Information
+# welcome to kksmi's page
+##  Information
 #### name:xxxx
 #### school:njust
 #### email:linjiahong@njust.edu.cn
 
 
-### Recently News
+## Recently News
 
 
-### Research Direction
+## Research Direction
 
-### projects
+## projects
+[img src="/rV5qv_ETZvY.jpg" width="100%"> ]
