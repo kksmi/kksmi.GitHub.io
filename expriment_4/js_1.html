@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>点学号</title>
+</head>
+
+<body>
+<script LANGUAGE="JavaScript">
+
+function numbers() {
+var numcount = document.dianming.num.value*1;
+var maxnumbers = document.dianming.maxnum.value*1;
+if (numcount > maxnumbers) {
+alert("随机人数超过班级人数！");
+	document.dianming.num.value="";
+}
+else {
+r = new Array (numcount);
+for (var i = 0; i <= numcount; i++) {
+r[i] = Math.round(Math.random() * (maxnumbers-1))+1;
+for(var j=0;j<i;j++){if(r[j]==r[i]){
+	r[i] = Math.round(Math.random() * (maxnumbers-1))+1;}
+}
+
+
+var output = "";
+for (var k = 0; k <= numcount; k++) {
+output += "第 " + (k+1) + "个学生学号为： " + r[k] + "\n";
+}	
+document.getElementById("results").value = output;
+}     
+
+}
+
+</script>
+<h1>点名程序</h1>
+
+<form name="dianming">
+	<br>班级人数：<input type=text name="maxnum" value="0" size=4 maxlength=4><br>
+	<br>随机摇出人数：<input type=text name="num" value="0" size=3 maxlength=4><br>
+	<input type=button value="产生随机数" onclick="numbers()"/>
+	<br><textarea id="results" rows=11 cols=20></textarea><br>
+</form>
+
+</body>
+</html>

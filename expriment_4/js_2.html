@@ -1,0 +1,32 @@
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>图片欣赏</title>
+<style type="text/css">
+	.b{background-color: beige}
+	
+	</style>
+</head>
+
+<body class="b">
+<script language="javascript">
+	function choose(var pic)
+	{
+		document.getElementById("likepic").value=pic;
+		alert("你选择了"+pic);
+	}
+	</script>
+<form name="ym">
+<h1>选择你喜欢的图片</h1>
+<br>你选择的图片为<textarea id="likepic" rows=1 cols=5></textarea><br>
+	<style type="text/css">.pic{text-align: center;}</style>
+<div class="pic">
+<img  src="mAAG3tiLbvY.jpg" width="340" height="510" alt="雪山1" onclick="choose("雪山1")"/>
+	<img src="bQDrHXf_80c.jpg" width="340" height="510" alt="雪山2" onclick="choose("雪山2")"/>
+<img src="(null).jpg" width="340" height="510" alt="雪山3" onclick="choose"("雪山3")"/>
+		<img src="rV5qv_ETZvY.jpg" width="370" height="463" alt="秋意" onclick="choose("秋意")"/>
+		<img src="ZdPbCLXTZ0E.jpg" width="512" height="341" alt="樱花" onclick="choose("樱花")"/>
+</form>
+</body>
+</html>
