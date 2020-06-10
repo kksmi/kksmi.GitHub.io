@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jquery_1</title>
+	<style type="text/css">
+		.zfc1{color: blue;}
+		.zfc2{color: salmon;}
+	</style>
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("button").click(function(){
+		var s1=$(".zfc1").val;
+		var s2=$(".zfc2").val;
+		if(s1==s2){alert("字符串相等");}
+		else{alert("字符串不相等");}
+	});
+						  });
+	</script>
+</head>
+
+<body>
+	<br>字符串1:<input class="zfc1"  type="text" value="" size="4" maxlength="50"><br>
+	<br>字符串2:<input class="zfc2"  type="text" value="" size="4" maxlength="50"><br>
+    <button type="button">比较</button>
+</body>
+</html>
