@@ -1,0 +1,95 @@
+ul,ol,li{
+	list-style: none;
+}
+button{
+	border:none;
+}
+#my-slide{
+	width:100%;
+	height:380px;
+}
+
+#my-slide .slide-list{
+	max-width: 980px;
+	width: 100%;
+	height: 290px;
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+}
+
+#my-slide .slide-list li{
+	margin-right:20px;
+	height:380px;
+	position: absolute;
+	top:0;
+	overflow: hidden;
+	width:calc(100% - 20px - 50%);
+	max-width: 660px;
+}
+
+#my-slide .slide-list li img{
+	height:380px;
+	width:660px;
+}
+
+/**顶部幻灯片按钮**/
+.slick-top-prev{
+	position:absolute;
+	display: block;
+	height: 94px;
+	width:56px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	top: 50%;
+	left: 0px;
+	margin-top:-47px;
+}
+
+.slick-arrow{
+	background-color: #fff;
+	font-family: monospace;
+	font-weight: 100;
+	font-size: 50px;
+	color: #333;
+	outline: none;
+	z-index: 1;
+	opacity: .95;
+}
+
+.slick-top-prev:before{
+	content: "<";
+	font-weight: bold;
+}
+
+.slick-top-next{
+	position:absolute;
+	display: block;
+	height: 94px;
+	width:56px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	top: 50%;
+	right: 0px;
+	margin-top:-47px;
+}
+
+.slick-top-next:before{
+	content: ">";
+	font-weight: bold;
+}
+@keyframes fade-in {  
+    0% {opacity: 0;}/*初始状态 透明度为0*/  
+    40% {opacity: 0;}/*过渡状态 透明度为0*/  
+    100% {opacity: 1;}/*结束状态 透明度为1*/  
+}  
+@-webkit-keyframes fade-in {/*针对webkit内核*/  
+    0% {opacity: 0;}  
+    40% {opacity: 0;}  
+    100% {opacity: 1;}  
+}  
+#title{    
+    animation: fade-in;/*动画名称*/  
+    animation-duration: 1.5s;/*动画持续时间*/  
+    -webkit-animation:fade-in 1.5s;/*针对webkit内核*/  
+} 
